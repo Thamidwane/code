@@ -1,0 +1,571 @@
+
+Question 1 (10)
+Provide your answer by selecting Question number 1 and selecting the answer under the corresponding EC sub question number.
+(1.1) What is the purpose of the main function in a Kotlin program? [1]
+A. To define the program’s entry point
+B. To handle user input
+C. To display messages to the user
+D. To declare variables
+Memo: A - To define the program’s entry point
+
+(1.2) What is the purpose of the println() function in Kotlin? [1]
+A. To read input from the user
+B. To perform mathematical calculations
+C. To print text to the standard output
+D. To define a new function
+Memo: C - To print text to the standard output
+(1.3) Which of the following statements is true about Kotlin function names? [1]
+A. Function names should start with an uppercase letter.
+B. Function names should be in camel case.
+C. Function names should be separated by spaces.
+D. Function names should be nouns.
+Memo: B - Function names should be in camel case.
+(1.4) What is the purpose of defining separate functions for specific tasks? [1]
+A. To make the code longer and more complex
+B. To slow down program execution
+C. To create reusable and readable code
+D. To confuse other developers
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 4 of 28 March 2024
+Memo: C - To create reusable and readable code
+(1.5) Which keyword is used for declaring or defining a function in program- [1]
+ming languages such as Kotlin or Swift?
+A. def
+B. function
+C. fun
+D. proc
+Memo: C - fun
+(1.6) What is the default return type for a function when not explicitly spec- [1]
+ified in Kotlin
+A. null
+B. void
+C. NONE
+D. Unit
+Memo: D - Unit
+(1.7) What keyword is used to define a new variable in Kotlin? [1]
+A. var
+B. val
+C. let
+D. int
+Memo: B - val
+(1.8) In Kotlin, what symbol precedes a variable name within a string tem- [1]
+plate?
+A. #
+B. $
+C. @
+D. &
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 5 of 28 March 2024
+Memo: B - $
+(1.9) Which of the following is a relevant style guide recommendation for the [1]
+placement of the opening curly brace in Kotlin?
+A. It should appear on its own line.
+B. It should appear at the end of the line where the function begins.
+C. It should appear after a space on the same line as the function
+declaration.
+D. It should appear before the function declaration.
+Memo: B - It should appear at the end of the line where the function
+begins.
+(1.10) What feature allows you to specify parameter names when calling a [1]
+function in Kotlin?
+A. Named parameters
+B. Parameter identifiers
+C. Argument labels
+D. Named arguments
+Memo: D - Named arguments
+
+
+Question 2 (10)
+Provide your answer by selecting Question number 2 and selecting the answer under the corresponding EC sub question number.
+(2.1) Which IDE serves as the foundation for Android Studio? [1]
+A. Eclipse
+B. NetBeans
+C. IntelliJ IDEA
+D. Visual Studio
+Memo: C - IntelliJ IDEA
+(2.2) What does a project template provide in Android Studio? [1]
+A. Starter code and project structure
+B. A list of dependencies
+C. Pre installed plugins
+D. Sample data for testing
+Memo: A - Starter code and project structure
+(2.3) In Android Studio, what is the function of the Project tab? [1]
+A. It displays the layout of the app interface.
+B. It provides a list of dependencies for the project.
+C. It shows the files and folders of the project.
+D. It offers debugging tools for testing the app.
+Memo: C - It shows the files and folders of the project.
+(2.4) In Android app development, which function serves as the entry point [1]
+to the app and is responsible for building the user interface?
+A. onStart
+B. onResume
+C. onCreate
+D. onRestart
+
+Memo: C - onCreate
+(2.5) What purpose does the Composable annotation serve in Jetpack Com- [1]
+pose?
+A. It signals to the Kotlin compiler that the function generates UI.
+B. It marks a function as the entry point to the app.
+C. It indicates that a function is used to set the content of the UI.
+D. It specifies that a function is used for handling user interactions.
+Memo: A - It signals to the Kotlin compiler that the function generates
+UI.
+(2.6) Which of the following statements accurately describes a composable [1]
+function in Jetpack Compose?
+A. It must have a return type specified.
+B. Its name must start with a lowercase letter.
+C. It cannot accept parameters.
+D. It cannot return anything.
+Memo: D - It cannot return anything.
+(2.7) What is a Surface used for in Jetpack Compose? [1]
+A. It is a container for UI elements.
+B. It represents a section of UI where appearance can be altered.
+C. It provides animation effects.
+D. It defines the layout structure of the app.
+Memo: B - It represents a section of UI where appearance can be
+altered.
+(2.8) What is an Android Virtual Device (AVD) used for in Android develop- [1]
+ment?
+A. It is a physical device used for testing apps.
+B. It is a virtual representation of a mobile device that runs on a
+computer.
+C. It is a tool for debugging code in Android Studio.
+D. It is a software library for building user interfaces in Android
+apps.
+Memo: B - It is a virtual representation of a mobile device that runs
+on a computer.
+(2.9) What annotation is used to preview a composable in Android Studio? [1]
+A. View
+B. Preview
+C. PreviewComposable
+D. ComposablePreview
+Memo: B - Preview
+(2.10) Where can you find the option to create a virtual device in Android [1]
+Studio?
+A. TOOLS > DEVICE SIMULATOR
+B. TOOLS > DEVICE MANAGER
+C. NEW > VIRTUAL DEVICE
+D. NEW > AVD MANAGER
+
+Question 3 (15)
+Design a Jetpack Compose @Composable function named TUT to display the
+interface below.
+The function should adhere to the following requirements:
+Layout Structure:
+• Utilize composables to achieve a structured layout comprising a Column
+and a Row.
+• Display the TUT logo image at the top of the layout, centered horizontally.
+• Below the logo, create a row containing two Text elements, one with
+the text ”TUT Mobile:” displayed in blue and another displaying YOUR
+own student number eg. 204063982 in red.
+Resource Management:
+• Ensure the TUT logo is displayed using an appropriate method for loading images in Jetpack Compose.
+• Display your student number by accessing the appropriate string resource (R.string.stu_num).
+Styling and Visualization:
+• Apply a blue background to one Text composable and a red background
+to the other within the row.
+• Set the font size of the ”TUT Mobile:” text to 40sp.
+• Ensure proper alignment of the text within the row.
+Modifiers and Alignment:
+• Utilize appropriate modifiers to achieve desired layout dimensions and
+alignments.
+• Ensure the logo is centered horizontally within its container.
+Submission Guidelines:
+• Submit only the code for your TUT composable function under Question
+3
+Memo:
+1 /*
+2
+3 B = Birch
+4 D = Dlamini
+5 L = Langa
+6 H = Hattingh
+7
+8 ## − H START −− ##
+9 1 − Composable function TUT created (Params not required)
+ 
+10 1 − Attempted to use painterResource for TUT Logo award even i f
+painterResource params incorrec t
+11 3 − painterResource used resouce id from R.drawable indica ting student
+added logo as resource
+12 ## − H END −− ##
+13
+14 ## − B START −− ##
+15 1 − Attempted to use Box to contain logo image
+16 1 − Used modifier in logo Box to fillMaxWidth ()
+17 1 − Used Alignment.Center in logo Box contentAlignmen
+18 1 − Used Image with correct painter argument even i f no contentDescription
+to display image
+19 ## − B END −− ##
+20
+21 ## − D START −− ##
+22 1 − Created row containing 2 text components
+23 1 − Row has verticalAlignment set as Alignment. CenterVertically
+24 1 − Text for TUT Mobile has a fontSize set to 40.sp
+25 ## − D END −− ##
+26
+27 ## − L START −− ##
+28 2 − Text for student number i s correc tly loaded as a stringResource from R.
+s tring
+29 1 − Text components wraped in Surface components with correct color set.
+30 ## − L END −− ##
+31 *
+/
+32
+33 @Composable
+34 fun TUT(modifier : Modi fier = Modi fier ) {
+35 val TUTLogo = painterResource ( id = R. drawable . tut_logo )
+36
+37 Column {
+38 Box(modifier = Modi fier . fillMaxWidth () , contentAlignment =
+Alignment . Center) {
+39 Image( painter = TUTLogo, contentDescription = ”The TUT Logo” )
+40 }
+41 Row(
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 12 of 28 March 2024
+42 verticalAlignment = Alignment . CenterVertically
+43 ) {
+44 Surface ( color = Color . Blue ) {
+45 Text(
+46 text = ”TUT Mobile: ” ,
+47 fontSize = 40.sp
+48 )
+49 }
+50 Surface ( color = Color .Red) {
+51 Text(
+52 text = stringResource (R. s tring .stu_num) ,
+53 textAlign = TextAlign . Center ,
+54 )
+55 }
+56
+57 }
+58 }
+59 }
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 13 of 28 March 2024
+Question 4 (10)
+Provide your answer by selecting Question number 4 and selecting the answer under the corresponding EC sub question number.
+(4.1) What is a consideration when converting a when statement to a when [1]
+expression in Kotlin?
+A. The number of branches must be reduced
+B. Each branch must have a print statement
+C. The else branch must be removed
+D. The last line of each branch must return a value or an expression
+Memo: D - The last line of each branch must return a value or an
+expression
+(4.2) What does the if keyword represent in Kotlin? [1]
+A. Start of a condition block
+B. End of a loop
+C. Definition of a function
+D. Variable assignment
+Memo: A - Start of a condition block
+(4.3) What is the purpose of the is keyword in Kotlin? [1]
+A. Loop iteration
+B. Type check
+C. Variable assignment
+D. Condition evaluation
+Memo: B - Type check
+(4.4) What is the purpose of using null in Kotlin? [1]
+A. To represent an empty string
+B. To define a variable without initializing it
+C. To indicate the absence of a value
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 14 of 28 March 2024
+D. To create placeholders for future values
+Memo: C - To indicate the absence of a value
+(4.5) What does the safe-call operator ?. return if the variable it is applied [1]
+to is null?
+A. A CompileError error
+B. A StackOverflowError error
+C. An OutOfMemoryError error
+D. null
+Memo: D - null
+(4.6) What does encapsulation do in object-oriented programming? [1]
+A. Wraps the related properties and methods that perform actions
+on those properties in a class
+B. Hides the internal implementation logic of a class
+C. Allows you to build a class upon the characteristics and behavior of other classes
+D. Enables the use of different objects in a singleton
+Memo: A - Wraps the related properties and methods that perform
+actions on those properties in a class
+(4.7) Which of the following statements best describes a lambda expression [1]
+in Kotlin?
+A. A lambda expression is a type of function that cannot be stored
+in a variable
+B. A lambda expression is a concise way to define a function without using the fun keyword
+C. A lambda expression is used only for mathematical operations
+in Kotlin
+D. A lambda expression can only take one parameter
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 15 of 28 March 2024
+Memo: B - A lambda expression is a concise way to define a function
+without using the fun keyword
+(4.8) Which of the following statements about returning functions in Kotlin is [1]
+true?
+A. Functions can be returned from other functions in Kotlin
+B. Functions cannot be returned from other functions in Kotlin
+C. Only lambda expressions can be returned from other functions
+in Kotlin
+D. Functions can only be returned from higher-order functions in
+Kotlin
+Memo: A - Functions can be returned from other functions in Kotlin
+(4.9) What does it mean to invoke a function in Kotlin? [1]
+A. To define a new function
+B. To call a function and execute its body
+C. To store a function in a variable
+D. To pass a function as an argument to another function
+Memo: B - To call a function and execute its body
+(4.10) What is one disadvantage of using the !! not-null assertion operator in [1]
+Kotlin?
+A. It results in slower code execution
+B. It reduces code readability
+C. It increases the chance of runtime errors
+D. It may cause a NullPointerException error
+Memo: D - It may cause a NullPointerException error
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 16 of 28 March 2024
+Question 5 (10)
+Provide your answer by selecting Question number 5 and selecting the answer under the corresponding EC sub question number.
+All sub-questions in Question 5 is based on the following code:
+1 fun DiceWithButtonAndImage(modifier : Modi fier = Modi fier ) {
+2 var re sul t = 1
+3 Column(
+4 modifier = modifier ,
+5 horizontalAlignment = Alignment . CenterHorizontally
+6 ) {
+7 Image( painter = painterResource (imageResource) , contentDescription
+= re sul t . toString () )
+8 Button( onClick = { re sul t = (1 . .6) .random() }) {
+9 Text( stringResource (R. s tring . r o l l ) )
+10 }
+11 }
+12 }
+13
+(5.1) What is the purpose of the DiceWithButtonAndImage function in the [1]
+provided code?
+A. To display a dice image with a roll button
+B. To display a button with a roll text
+C. To display a dice image with a result text
+D. To display a button with an image
+Memo: A - To display a dice image with a roll button
+(5.2) Which modifier is used to customize the layout of the DiceWithButto- [1]
+nAndImage function?
+A. Row
+B. Column
+C. Box
+D. ConstraintLayout
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 17 of 28 March 2024
+Memo: B - Column
+(5.3) What does the result variable represent in the DiceWithButtonAndIm- [1]
+age function?
+A. The number displayed on the dice
+B. The content description of the dice image
+C. The modifier applied to the layout
+D. The resource ID of the image
+Memo: A - The number displayed on the dice
+(5.4) How is the alignment of the elements inside the Column defined? [1]
+A. By setting the gravity attribute
+B. By using the alignment parameter
+C. By adjusting the padding
+D. By applying a custom modifier
+Memo: B - By using the alignment parameter
+(5.5) What action is performed when the button in DiceWithButtonAndImage [1]
+is clicked?
+A. The image is changed to a new random dice face
+B. The result variable is incremented by one
+C. The result variable is set to a random number between 1 and
+6
+D. The image is rotated by 90 degrees
+Memo: C - The result variable is set to a random number between 1
+and 6
+(5.6) Which function is responsible for generating a random number between [1]
+1 and 6?
+A. randomInt(1, 6)
+B. random()
+C. random(1..6)
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 18 of 28 March 2024
+D. randomInRange(1, 6)
+Memo: C - random(1..6)
+(5.7) What is the purpose of the painterResource function in the provided [1]
+code?
+A. To draw custom shapes
+B. To load an image resource by its ID
+C. To apply colors to the image
+D. To define the size of the image
+Memo: B - To load an image resource by its ID
+(5.8) Which Compose component is used to display an image in the Dice- [1]
+WithButtonAndImage function?
+A. ImageView
+B. ImageBox
+C. Image
+D. ImageResource
+Memo: C - Image
+(5.9) What does the content description of the image represent? [1]
+A. The actual content of the image
+B. The result of the dice roll
+C. A description for accessibility purposes
+D. The resource ID of the image
+Memo: C - A description for accessibility purposes
+(5.10) Which resource is used for the text displayed on the button in Dice- [1]
+WithButtonAndImage?
+A. stringResource(R.string.button_text)
+B. stringResource (R.string.roll)
+C. stringResource (R.string.dice)
+D. stringResource (R.string.image)
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 19 of 28 March 2024
+Memo: stringResource (R.string.roll)
+
+
+You are tasked with designing a Jetpack Compose @Composable function named
+LabEq to manage lab resources. The function should satisfy the following requirements:
+Input Fields:
+• Include two OutlinedTextField composables to input the number of computers and students, respectively.
+• The first OutlinedTextField should prompt for the number of computers
+available in the lab.
+• The second OutlinedTextField should prompt for the number of students
+intending to use the lab.
+Button Functionality:
+• Implement a Button composable labeled ”Check Student Numbers” to
+validate the availability of resources.
+• Upon clicking the button, calculate the availability of computers compared to the number of students.
+• If the number of computers exceeds the number of students, display a
+message indicating that the lab can be used for the test.
+• If the number of students exceeds the number of computers, compute
+the additional computers required and display a message accordingly.
+Message Display:
+• Utilize a Text composable to dynamically display the message based on
+the comparison results.
+• Ensure the message is styled using the bodyMedium typography defined
+in the MaterialTheme.
+Modifiers and Layout:
+
+
+• Apply appropriate modifiers to achieve padding and spacing within the
+column layout.
+• Arrange the composables vertically with a specified spacing between
+them.
+Input Validation:
+• Validate user input to ensure that only numeric values are accepted for
+both the number of computers and students.
+• Handle cases where invalid or empty input is provided by defaulting to
+a value of 0.
+Lab Name Argument:
+• Accept the name of the lab as a parameter (labName) in the LabEq function.
+Submission Guidelines:
+• Submit only the code for yourLabEq composable function under Question
+6
+Screenshots:
+
+
+3 /*
+4
+5 B = Birch
+6 D = Dlamini
+7 L = Langa
+8 H = Hattingh
+9
+10 ## − B START − ##
+11 1 or 0 − Function named LabEQ (no other names) recieveing s tring param.
+Function marked as composable.
+12 1 or 0 − Mutable variables created . Variables should cover a l l question
+requirements .
+13 2 − UI components orginized with main Column. Column contains a l l other
+components.
+14 1 − Some padding applied to Column (does not have to be exaxt)
+15 ## − B END − ##
+16
+17 ## − D START − ##
+18 1 − Either of the OutlinedTextFields are created with the mutable variables
+as value
+19 1 − Either of the OutlinedTextFields has on change set correc tly
+20 1 − Either of the OutlinedTextFields has the label set correc tly
+21 1 − Either of the OutlinedTextFields has keyboardoptions set to number only
+22 ## − D END − ##
+23
+24 ## − L START − ##
+25 1 − Button created with correct Text
+26 2 or 0 − Button onClick logi c w i l l check / convert the s tring mutable(s) to
+in t . Including checking for null and setting to 0
+27 2 or 0 − I f logi c to check i f lab can be used for tes t correc tly
+implemented including calc to check how many addi tional computers i s
+needed
+28 1 − Message constructed using labName param and calcIn fo i f needed in
+correct code section according to logi c .
+29 ## − L END − ##
+30
+31 *
+/
+
+
+
+
+
+
+32 @Composable
+33 fun LabEq(labName: String ) {
+34
+35 var computers by remember { mutableStateOf( ” ” ) }
+36 var students by remember { mutableStateOf( ” ” ) }
+37 var message by remember { mutableStateOf( ” ” ) }
+38
+39
+40 Column(
+41 modifier = Modi fier . padding(16.dp) ,
+42 verticalArrangement = Arrangement . spacedBy(16.dp)
+43 ) {
+44 OutlinedTextField (
+45 value = computers ,
+46 onValueChange = { computers = i t } ,
+47 label = { Text( ”Number of Computers” ) } ,
+48 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType .
+Number)
+49 )
+50 OutlinedTextField (
+51 value = students ,
+52 onValueChange = { students = i t } ,
+53 label = { Text( ”Number of Students” ) } ,
+54 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType .
+Number)
+55 )
+56
+57 Button( onClick = {
+58 val compValue = computers . toIntOrNull () ?: 0
+59 val studentsValue = students . toIntOrNull () ?: 0
+60
+61 i f (compValue > studentsValue )
+62 {
+63 message = ”Lab $labName can be used for the tes t ”
+64 }
+65 else{
+66 val compNeeded = studentsValue − compValue
+MOB/MMD316D Semester Test 1(
+MEMO)
+- P. 27 of 28 March 2024
+67 message = ”Lab $labName w i l l need $compNeeded more
+computers. ”
+68 }
+69
+70 }) {
+71 Text( ”Check Student Numbers” )
+72 }
+73 Text(
+74 text = message,
+75 s tyle = MaterialTheme . typography .bodyMedium
+76 )
+77 }
+78 }

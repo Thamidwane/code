@@ -1,0 +1,252 @@
+Q1 
+ 
+1.1) B. <T> 
+
+1.2) B. A data type that can represent different types of values depending on how it’s instantiated 
+
+1.3) C. A function that produces a unique value for each item in the collection 
+
+1.4) C. Using the dot operator 
+1.5) A. A special type of class used to create types with a limited set of possible values 
+
+1.6) C. To represent data and automatically implement certain methods like toString() 
+
+1.7) C. toString() and other utility methods 
+
+1.8) C. When only one instance of a class is required 
+
+1.9) B. The array is copied to a new larger array 
+
+1.10) C. mapOf() 
+
+1.11) A. Properties 
+
+1.12) C. Adaptive icons 
+
+1.13) A. Squircle 
+
+1.14) C. Enhanced UI performance 
+
+1.15) C. A function that transforms each element of the collection 
+ 
+------------------------------------------------------------------------------------------------------------------ 
+
+
+import android.os.Bundle 
+
+import androidx.activity.ComponentActivity 
+
+import androidx.activity.compose.setContent 
+
+import androidx.compose.foundation.lazy.LazyColumn 
+
+import androidx.compose.foundation.lazy.items 
+
+import androidx.compose.material.Text 
+
+import androidx.compose.runtime.Composable 
+
+import androidx.compose.ui.text.TextStyle 
+
+import androidx.compose.ui.text.font.FontWeight 
+
+import androidx.compose.ui.tooling.preview.Preview 
+
+import androidx.compose.ui.unit.sp 
+
+  
+
+//The Complaint data class 
+
+data class Complaint( 
+
+    val personName: String, 
+
+    val complaintText: String, 
+
+    val resolved: Boolean = false 
+
+) 
+
+  
+
+//Create a list of Complaints here (2.1) 
+
+val complaints = listOf( 
+
+    Complaint("John Doe", "Slow internet connection", false), 
+
+    Complaint("Jane Smith", "Printer not working", true), 
+
+    Complaint("Alice Johnson", "Computer freezes frequently", false), 
+
+    Complaint("Bob Brown", "Email not syncing", true), 
+
+    Complaint("Eva Green", "Software crashes randomly", false) 
+
+) 
+
+  
+
+//Define the ComplaintItem Composable (2.2) 
+
+@Composable 
+
+fun ComplaintItem(complaint: Complaint) { 
+
+    Text(text = complaint.personName, style = TextStyle(fontWeight = FontWeight.Bold)) 
+
+    Text(text = complaint.complaintText) 
+
+    Text(text = if (complaint.resolved) "Resolved" else "Unresolved") 
+
+} 
+
+  
+
+// Step 4: Define the ComplaintList Composable (2.3) 
+
+@Composable 
+
+fun ComplaintList(complaints: List<Complaint>) { 
+
+    LazyColumn { 
+
+        items(complaints) { complaint -> 
+
+            ComplaintItem(complaint = complaint) 
+
+        } 
+
+    } 
+
+} 
+
+  
+
+// Step 5: Set up MainActivity with Jetpack Compose (2.4) 
+
+class MainActivity : ComponentActivity() { 
+
+    override fun onCreate(savedInstanceState: Bundle?) { 
+
+        super.onCreate(savedInstanceState) 
+
+  
+
+        setContent { 
+
+            Text("Complaints Received", style = TextStyle(fontSize = 20.sp)) 
+
+            ComplaintList(complaints = complaints) 
+
+        } 
+
+    } 
+
+} 
+
+  
+
+// Preview for ComplaintList (for development purposes) 
+
+@Preview(showBackground = true) 
+
+@Composable 
+
+fun PreviewComplaintList() { 
+
+    ComplaintList(complaints = complaints) 
+
+} 
+ 
+ 
+-------------------------------------------------------------------------------------------------------------- 
+Q3 
+ 
+(3.1) A. Google designers and developers 
+
+(3.2) B. To build high-quality digital experiences in a readable, attractive, and consistent manner 
+
+(3.3) A. Android and web platforms 
+
+(3.4) C. Colors and shapes 
+
+(3.5) B. In Theme.kt 
+
+(3.6) D. To list the colors used in the app 
+
+(3.7) C. To visually communicate functions 
+
+(3.8) C. Icons based on everyday objects 
+
+(3.9) C. Changes in app state or functionality 
+
+(3.10) C. Any changes in state 
+____________________________________________________________________________________ 
+
+ 
+
+Q4 
+ 
+(4.1) C. The transitioning of states an activity goes through from creation to destruction 
+
+(4.2) C. Strange bugs, confusing behavior, or excessive resource usage 
+
+(4.3) C. To ensure correct handling of state changes and resource usage 
+
+(4.4) C. To perform tasks in response to lifecycle state changes 
+
+(4.5) B. It may need to completely shut down and rebuild 
+
+(4.6) D. After onStop() 
+
+(4.7) B. To write short messages for debugging and monitoring purposes 
+
+(4.8) A. In the Logcat window within Android Studio 
+
+(4.9) C. Android Jetpack 
+
+(4.10) C. Data inconsistencies and subtle bugs 
+
+(4.11) B. It allows for easy building of multi-screen apps using a declarative approach similar to building user interfaces 
+
+(4.12) B. To allow users to share content with other apps or services 
+
+(4.13) C. NavHost 
+
+(4.14) C. startDestination 
+
+(4.15) A. To specify the composable content to be displayed for the given route 
+_________________________________________________________________________________ 
+Q5 
+ 
+Logic Error One: 
+In lines 48-50 the RadioButtons have the same Event onClick that handles them and the same value. 
+That means that no matterof which Button is chosed clicking one of them will always set selectedSubject as "MMD316D". 
+
+Impact: 
+This error will cause incorrect functionalities in the application. No matter which subject RadioButton the user selects, 
+the selectedSubject will always be set to "MMD316D" when clicked. As a result, 
+When "Go to Detail" button is clicked, it will always navigate to the detail screen for "MMD316D"
+
+Logic Error 2: 
+In line 58 of the HomeScreen composable, the navController.navigate() function is called with the selectedSubject variable directly
+as the destination route. 
+It's possible that it could be null or carry the value that doesn't correspond to any valid route in our NavHost. 
+
+Impact: 
+This error will likely cause a problem the moment we mobe to the selected subject's detail screen. 
+If the selectedSubject variable is empty or holds an invalid value, the navController.navigate()
+might lead to a null navigation
+ 
+____________________________________________________________________________________ 
+Ebd 
+
+====================================================================== 
+ 
+
+ 
+ 
+========================================================================= 
+ 
